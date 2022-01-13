@@ -11,6 +11,22 @@
             height: 80px;
         }
 
+        .hamburger {
+            width: 40px;
+            height: 40px;
+            display: none;
+        }
+
+        @media (max-width: 560px) {
+            nav a {
+                display: none;
+            }
+
+            .hamburger {
+                display: inline-block;
+            }
+        }
+
         nav {
             @include display($gap: 30px);
             
@@ -41,6 +57,13 @@
             margin-top: 30px;
             @include display($flex-direction: column, $align-items: start, $gap: 30px);
 
+            @media (max-width: 560px) {
+                .variantlar {
+                    margin-top: 15px;
+                    gap: 15px;
+                }
+            }
+
             label {
                 color: blue;
                 font-size: 24px;
@@ -50,9 +73,11 @@
         }
 
         .tugmalar {
-            margin-top: 50px;
-            @include display($justify-content: space-between);
+            margin-top: 20px;
+            @include display($justify-content: center, $gap: 20px);
+            flex-wrap: wrap;
         }
+
 
     }
 }

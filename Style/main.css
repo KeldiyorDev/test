@@ -24,6 +24,21 @@
   height: 80px;
 }
 
+.section-1 header .hamburger {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .section-1 header nav a {
+    display: none;
+  }
+  .section-1 header .hamburger {
+    display: inline-block;
+  }
+}
+
 .section-1 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +94,13 @@
   gap: 30px;
 }
 
+@media (max-width: 560px) {
+  .section-1 article .variantlar .variantlar {
+    margin-top: 15px;
+    gap: 15px;
+  }
+}
+
 .section-1 article .variantlar label {
   color: blue;
   font-size: 24px;
@@ -87,7 +109,7 @@
 }
 
 .section-1 article .tugmalar {
-  margin-top: 50px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,13 +117,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0px;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 * {
@@ -117,6 +141,12 @@ body {
 
 body section {
   padding: 0 100px;
+}
+
+@media (max-width: 560px) {
+  section {
+    padding: 0 20px !important;
+  }
 }
 
 button {
