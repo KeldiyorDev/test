@@ -167,6 +167,32 @@ tugatish.addEventListener("click", function (evt) {
         if (kalitlar[i] == javoblar[i]) yechimlarSoni++
     }
     alert(yechimlarSoni)
+
+    k = 0;
+
+    savol.innerText = testlar[k].savol
+    variant1.innerText = testlar[k].variant1
+    variant2.innerText = testlar[k].variant2
+    variant3.innerText = testlar[k].variant3
+    variant4.innerText = testlar[k].variant4
+
+    for (i = 0; i < testlar.length; i++) {
+        javoblar[i] = 0
+    }
+
+    A.checked = false;
+    B.checked = false;
+    C.checked = false;
+    D.checked = false;
+
+    for (let x = 0; x < testlar.length; x++) {
+        document.getElementById(x + "index").style.background = "blue"
+        document.getElementById(x + "index").style.color = "white"
+    }
+
+    document.getElementById(k + "index").style.background = "yellow"
+    document.getElementById(k + "index").style.color = "blue"
+
 })
 
 
