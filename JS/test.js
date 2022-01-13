@@ -5,7 +5,7 @@ const testlar = [
         variant2: "0-10",
         variant3: "0-50",
         variant4: "0-100",
-        javob: 1
+        kalit: 1
     },
     {
         savol: "Semantik teglar qatorini toping?",
@@ -13,7 +13,7 @@ const testlar = [
         variant2: "<footer>, <article>, <ul>",
         variant3: "<section>, <nav>, <aside>",
         variant4: "<div>, <header>, <nav>",
-        javob: 3
+        kalit: 3
     },
     {
         savol: "<h1> tegining uzunligi qancha bo`lishi kerak?",
@@ -21,7 +21,7 @@ const testlar = [
         variant2: "20 tadan 70 tagacha",
         variant3: "15 tadan 75 tagacha",
         variant4: "Istalgan uzunlikda",
-        javob: 2
+        kalit: 2
     },
     {
         savol: "<a> tegining qaysi attributi faylni yuklab oladi?",
@@ -29,7 +29,7 @@ const testlar = [
         variant2: "add",
         variant3: "download",
         variant4: "target",
-        javob: 3
+        kalit: 3
     },
     {
         savol: "console.log(false + true)",
@@ -37,7 +37,7 @@ const testlar = [
         variant2: "1",
         variant3: "true",
         variant4: "false",
-        javob: 2
+        kalit: 2
     },
     {
         savol: "console.console.log(Math.pow(4, 2))",
@@ -45,7 +45,7 @@ const testlar = [
         variant2: "16",
         variant3: "32",
         variant4: "64",
-        javob: 2
+        kalit: 2
     },
     {
         savol: "Quyidagilardan qaysi biri inline element?",
@@ -53,7 +53,7 @@ const testlar = [
         variant2: "div",
         variant3: "hr",
         variant4: "form",
-        javob: 1
+        kalit: 1
     },
     {
         savol: "console.log(2 ** 3 ** 2)",
@@ -61,7 +61,7 @@ const testlar = [
         variant2: "256",
         variant3: "512",
         variant4: "1024",
-        javob: 3
+        kalit: 3
     },
     {
         savol: "Transformning qaysi parametri elementni kattalashtiradi?",
@@ -69,7 +69,7 @@ const testlar = [
         variant2: "rotate()",
         variant3: "scale()",
         variant4: "skew()",
-        javob: 3
+        kalit: 3
     },
     {
         savol: "Qaysi metod yordamida massiv boshiga element qo`shish mumkin",
@@ -77,7 +77,7 @@ const testlar = [
         variant2: "shift()",
         variant3: "pop()",
         variant4: "push()",
-        javob: 1
+        kalit: 1
     },
 ]
 
