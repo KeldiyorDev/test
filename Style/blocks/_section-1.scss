@@ -28,11 +28,13 @@
         // text-align: center;
         // background-color: red;
 
-        p {
+        & > p {
             text-align: center;
             width: 100%;
             margin: 0 auto;
-
+            color: blue;
+            font-size: 24px;
+            font-weight: 500;
         }
 
         .variantlar {
@@ -40,7 +42,10 @@
             @include display($flex-direction: column, $align-items: start, $gap: 30px);
 
             label {
-                margin-top: -50px;
+                color: blue;
+                font-size: 24px;
+                font-weight: 500;
+                margin-left: 10px;
             }
         }
 

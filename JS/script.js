@@ -1,9 +1,17 @@
-const header = document.header
+const div = document.querySelector(".indexlar")
 
-con
+for (let i = 0; i < testlar.length; i++) {
+    const span = document.createElement("span")
+    div.appendChild(span)
+    span.id = i + "index"
 
-for
 
+    const p = document.createElement("p")
+    span.appendChild(p)
+
+    p.innerText = i + 1
+    span.classList = "savolIndexsi"
+}
 
 const savol = document.getElementById("savol")
 const variant1 = document.getElementById("variant1")
@@ -13,7 +21,7 @@ const variant4 = document.getElementById("variant4")
 
 // kalitlar => barcha test kalitlari
 let kalitlar = []
-for (let i = 0; i < testlar.length; i++) {
+for (i = 0; i < testlar.length; i++) {
     kalitlar.push(testlar[i].kalit)
 }
 
@@ -25,6 +33,9 @@ variant1.innerText = testlar[k].variant1
 variant2.innerText = testlar[k].variant2
 variant3.innerText = testlar[k].variant3
 variant4.innerText = testlar[k].variant4
+
+document.getElementById(k + "index").style.background = "yellow"
+document.getElementById(k + "index").style.color = "blue"
 
 
 const A = document.getElementById("A")
@@ -89,9 +100,17 @@ oldingi.addEventListener("click", function (evt) {
                     break;
             }
         }
-
-
     }
+
+    for (let x = 0; x < testlar.length; x++) {
+        document.getElementById(x + "index").style.background = "blue"
+        document.getElementById(x + "index").style.color = "white"
+    }
+
+    document.getElementById(k + "index").style.background = "yellow"
+    document.getElementById(k + "index").style.color = "blue"
+
+
 })
 
 keyingi.addEventListener("click", function (evt) {
@@ -126,6 +145,15 @@ keyingi.addEventListener("click", function (evt) {
         }
     }
 
+
+    for (let x = 0; x < testlar.length; x++) {
+        document.getElementById(x + "index").style.background = "blue"
+        document.getElementById(x + "index").style.color = "white"
+    }
+
+    document.getElementById(k + "index").style.background = "yellow"
+    document.getElementById(k + "index").style.color = "blue"
+
 })
 
 // yechimlarSoni => to`g`ri yechimlar soni
@@ -140,3 +168,49 @@ tugatish.addEventListener("click", function (evt) {
     }
     alert(yechimlarSoni)
 })
+
+
+for (let i = 0; i < testlar.length; i++) {
+    document.getElementById(i + "index").addEventListener("click", function (evt) {
+        evt.preventDefault()
+
+        for (let x = 0; x < testlar.length; x++) {
+            document.getElementById(x + "index").style.background = "blue"
+            document.getElementById(x + "index").style.color = "white"
+        }
+
+        document.getElementById(i + "index").style.background = "yellow"
+        document.getElementById(i + "index").style.color = "blue"
+
+        k = i
+
+
+        savol.innerText = testlar[k].savol
+        variant1.innerText = testlar[k].variant1
+        variant2.innerText = testlar[k].variant2
+        variant3.innerText = testlar[k].variant3
+        variant4.innerText = testlar[k].variant4
+        A.checked = false;
+        B.checked = false;
+        C.checked = false;
+        D.checked = false;
+
+        if (javoblar[k] > 0) {
+            switch (javoblar[k]) {
+                case 1:
+                    A.checked = true;
+                    break;
+                case 2:
+                    B.checked = true;
+                    break;
+                case 3:
+                    C.checked = true;
+                    break;
+                case 4:
+                    D.checked = true;
+                    break;
+
+            }
+        }
+    })
+}
