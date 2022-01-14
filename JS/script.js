@@ -166,7 +166,7 @@ tugatish.addEventListener("click", function (evt) {
     for (i = 0; i < testlar.length; i++) {
         if (kalitlar[i] == javoblar[i]) yechimlarSoni++
     }
-    alert(yechimlarSoni)
+    alert(`Siz ${testlar.length} ta savoldan ${yechimlarSoni} tasiga javob berdingiz!`)
 
     k = 0;
 
