@@ -1,6 +1,6 @@
 const testlar = [
     {
-        savol: "opacity xususiyati qanday qiymatlarini olishi mumkin?",
+        savol: "opacity xususiyati qanday qiymatlarini olishi mumkin? ",
         variant1: "0-1",
         variant2: "0-10",
         variant3: "0-50",
@@ -40,7 +40,7 @@ const testlar = [
         kalit: 2
     },
     {
-        savol: "console.console.log(Math.pow(4, 2))",
+        savol: "console.log(Math.pow(4, 2))",
         variant1: "6",
         variant2: "16",
         variant3: "32",
